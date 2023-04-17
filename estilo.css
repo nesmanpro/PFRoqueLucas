@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;500;700&display=swap');
 
+/* Start genetal styles */
+
 :root{
     --color-primario: #EC426F;
     --color-secundario: #FADB5F;
@@ -7,20 +9,12 @@
     --texto-oscuro: #000000;
 }
     
-
 *{
     margin: 0;
     padding: 0;
     font-family: Helvetica, sans-serif;
     box-sizing: border-box;
 }
-
-
-
-
-/*///// Estilos de Textos generales /////*/
-
-
 
 
 h1{
@@ -101,11 +95,7 @@ ul:hover li a:not(:hover) {
 } 
 
 
-
-
-
 /*/////     Body     /////*/
-
 
 
 main{
@@ -192,7 +182,7 @@ section {
 }
 
 
-.portmain{
+.portMain{
     display: flex;
     gap: 0;
     flex-direction: column;
