@@ -2,29 +2,27 @@
 
 /* Start genetal styles */
 
-:root{
+:root {
     --color-primario: #EC426F;
     --color-secundario: #FADB5F;
     --fondo-claro: #ffffff;
     --texto-oscuro: #000000;
 }
     
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: Helvetica, sans-serif;
     box-sizing: border-box;
 }
 
-
-h1{
+h1 {
     font-size: 7vh;
     font-weight: 700;
     color: var(--texto-oscuro);
 }
 
-
-h2{
+h2 {
     text-align: center;
     background-color: black;
     color: #ffc34a; 
@@ -34,17 +32,14 @@ h2{
     text-align: center;
 }
 
-p{
+p {
     font-size: 16px;
 }
 
+/* End General Styles */
+/* Start Header */
 
-
-/*///// Header y Menu /////*/
-
-
-
-header{
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -56,49 +51,45 @@ header{
     z-index: 10;
 }
 
-
-.logo img{
+.logo img {
     height:100px;
 
     
 }
 
+/*  Start Nav */
 
-.barra{
+.barra {
     font-family: Helvetica, sans-serif;
     font-weight: 550;
     font-size: 20px;
 }
 
-
-.barra li{
-     list-style: none;
-     display: inline-block;
-     margin: 0 0 0 50px;
+.barra li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 0 0 50px;
 }
 
-
-.barra a{
+.barra a {
     text-decoration: none;
     color: #000000 ;
 }
 
-
-.barra a:hover{
+.barra a:hover {
     color: var(--color-primario);
 }
-
 
 ul:hover li a:not(:hover) {
     color: var(--texto-oscuro); opacity: 0.5;
     filter: blur (1px);
 } 
+/* End Nav */
+/* End Header */
 
+/*  Start Body  */
 
-/*/////     Body     /////*/
-
-
-main{
+main {
     display: flex;
     justify-content: center;
     height: calc(100vh - 350px);
@@ -107,7 +98,7 @@ main{
     z-index: 5;
 }
 
-.ContMain{
+.ContMain {
     height: calc(100vh - 800px);
 }
 
@@ -121,16 +112,13 @@ section {
     overflow: hidden;
 }
 
-
-
-.txtRight{
+.txtRight {
     flex: 1;
     text-align: left;
     margin: 80px;
 }
 
-
-.imgLeft{
+.imgLeft {
     height: 60vh;
     width: auto;
     flex: 2;
@@ -138,15 +126,13 @@ section {
     justify-content: center;      
 }
 
-
-.txtLeft{
+.txtLeft {
     flex: 1;
     text-align: left;
     margin: 80px;
 }
 
-
-.imgRight{
+.imgRight {
     height: 60vh;
     width: auto;
     flex: 2;
@@ -154,12 +140,11 @@ section {
     justify-content: center;      
 }
 
-.txtBox{
+.txtBox {
     min-width: 200px;
 }
 
-
-.BtnMain{
+.BtnMain {
     margin: 30px 0 0 0;
     background-color: var(--color-primario);
     color: var(--fondo-claro);
@@ -169,20 +154,17 @@ section {
     border-radius: 30px ;
 }
 
-
-.BtnMain:hover{
+.BtnMain:hover {
     background-color: var(--color-secundario);
     color: var(--texto-oscuro);
 }
 
-
-.form{
+.form {
     margin: 90px 190px 90px 0;
     float: right;
 }
 
-
-.portMain{
+.portMain {
     display: flex;
     gap: 0;
     flex-direction: column;
@@ -192,37 +174,29 @@ section {
     position: absolute;
 }
 
+/* End Body */
 
+/*  Start Footer */
 
-
- /*/////     Footer     /////*/
-
-
-
-
-
-.foot1 li{
+.foot1 li {
     list-style: none;
     display: inline-block;
     margin: 0 20px 0 0;
 }
 
-
-.foot2{
+.foot2 {
     font-weight: 600;
     float: left;
     margin: 50px 0 0 50px ;
 }
 
-
-.foot2 li{
+.foot2 li {
     list-style: none;
     display: inline-block;
     margin: 0 20px 0 0;
 }
 
-
-footer{
+footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -235,44 +209,22 @@ footer{
 
 }
 
-
-.footPort{   
+.footPort {   
     position: end;
     z-index: 10;
 }
 
-
-.footLeft{
+.footLeft {
     font-weight: 500;
 }
 
-
-.footLeft span{
+.footLeft span {
     font-weight: 600;
 }
 
-
-.footRight i{
+.footRight i {
     letter-spacing: 15px;
     font-size: 22px;
 }
 
-.custom-shape-divider-top-1681554878 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-}
-
-.custom-shape-divider-top-1681554878 svg {
-    position: relative;
-    display: block;
-    width: calc(100% + 1.3px);
-    height: 150px;
-}
-
-.custom-shape-divider-top-1681554878 .shape-fill {
-    fill: #FFFFFF;
-}
+/* End Footer */
