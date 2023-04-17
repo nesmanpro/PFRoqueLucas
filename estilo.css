@@ -81,7 +81,8 @@ header {
 ul:hover li a:not(:hover) {
     color: var(--texto-oscuro); opacity: 0.5;
     filter: blur (1px);
-} 
+}
+
 /* End Nav */
 /* End Header */
 
