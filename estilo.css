@@ -16,6 +16,7 @@
     box-sizing: border-box;
 }
 
+
 h1 {
     font-size: 7vh;
     font-weight: 700;
@@ -38,6 +39,11 @@ p {
 
 /* End General Styles */
 /*  Start Nav */
+
+nav .navbar {
+    grid-column-start: 2;
+    grid-column-end: 5;
+}
 
 .logo img {
     height:100px;
@@ -111,9 +117,10 @@ ul:hover li a:not(:hover) {
 /*  Start Body  */
 
 main {
+    grid-area: main;
     display: flex;
     justify-content: center;
-    height: calc(100vh - 350px);
+    height: calc(100vh - 300px);
     width: 100%;
     position: relative;
     z-index: 5;
@@ -166,17 +173,17 @@ section {
     min-width: 200px;
 }
 
-.BtnMain {
+p.BtnMain {
     margin: 30px 0 0 0;
     background-color: var(--color-primario);
     color: var(--fondo-claro);
     font-weight: 600;
     display: inline-block;
     padding: 17px 30px;
-    border-radius: 30px ;
+    border-radius: 40px ;
 }
 
-.BtnMain:hover {
+p.BtnMain:hover {
     background-color: var(--color-secundario);
     color: var(--texto-oscuro);
 }
@@ -221,20 +228,20 @@ section {
 footer {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: end;
     background-color: var(--color-secundario);
-    height: 400px;
+    height: 150px;
     width: 100%;
     padding: 50px;
     position: relative;
     z-index: 10;
 
 }
-
+/* 
 .footPort {   
     position: end;
     z-index: 10;
-}
+} */
 
 .footLeft {
     font-weight: 500;
@@ -244,9 +251,17 @@ footer {
     font-weight: 600;
 }
 
-.footIcons i {
+.footIcons a {
     letter-spacing: 15px;
     font-size: 22px;
+    color: var(--texto-oscuro);
 }
+
+
+.footIcons:hover a.socials:not(:hover){
+        opacity: 0.8;
+        filter: blur(2px);
+}
+    
 
 /* End Footer */
