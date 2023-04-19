@@ -28,7 +28,6 @@ h2 {
     color: #ffc34a; 
     font-size: 30px;
     padding: 20px;
-    /* padding: 15px; */
     text-align: center;
 }
 
@@ -38,7 +37,6 @@ p {
 
 /* End General Styles */
 /*  Start Nav */
-
 
 .logo img {
     height:100px;
@@ -64,14 +62,12 @@ span .fa-solid {
     font-family: Helvetica, sans-serif;
     font-weight: 550;
     font-size: 20px;
-    /* position: relative; */
     overflow: hidden;
 }
 
 .barra li {
     list-style: none;
     display: inline-block;
-    /* quitar en media query movile */
     margin: 10px 20px 0 0;
 }
 
@@ -124,11 +120,7 @@ ul:hover li a:not(:hover) {
 main {
     display: flex;
     justify-content: center;
-    /* height: calc(100vh - 300px); */
-    /* height: 100vh; */
     width: 100%;
-    /* position: relative; */
-    /* z-index: 5; */
 }
 
 section {
@@ -136,7 +128,6 @@ section {
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-evenly;
-    /* align-items: stretch; */
     height: calc(100vh - 300px);
     align-items: center;
     padding: 0 20px;
@@ -171,9 +162,9 @@ section {
     justify-content: center;
 }
 
-.txtBox {
+/* .txtBox {
     min-width: 200px;
-}
+} */
 
 .txtAbout {
     font-size: 6vw;
@@ -191,11 +182,6 @@ p.BtnMain {
 
 p.BtnMain:hover {
     background-image: linear-gradient(-30deg, var(--color-primario) 0%, #ff9a44 100%);
-}
-
-.form {
-    margin: 90px 190px 90px 0;
-    float: right;
 }
 
 .portMain {
@@ -230,7 +216,6 @@ p.BtnMain:hover {
     display: grid;
 }
 
-
 .item1{ 
     background-image: url(./IMG/portfolio/holalucs_A_postmodern_malian_soldier_kids_in_a_futuristic_neon__0802ae4a-ffb4-40e6-8356-6d96f3fbff43.png);
 }
@@ -257,6 +242,65 @@ p.BtnMain:hover {
 }
 
 /* End Portfolio Page style */
+
+/* Start Contact Page Style */
+
+div.ContSec {
+    width: 100%;
+    margin: 0 0 80px 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 25% 1fr 25%;
+    grid-template-rows: 1fr 1fr;
+    justify-content:center;
+    align-items: center;
+}
+
+div.txtCont {
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+div.form {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    grid-template-rows: 15% 15% 1fr 15%;
+    grid-gap: 15px;
+}
+
+input {
+    background-color: rgb(237, 237, 237);
+    border: none;
+    width: 100%;
+    border-radius: 30px;
+    padding: 0 15px;
+    outline: none;
+}
+
+
+textarea {
+    background-color: rgb(237, 237, 237);
+    border: none;
+    padding: 15px 15px;
+    border-radius: 30px;
+    grid-column: 1/3;
+    grid-row: 3/4;
+    outline: none;
+}
+
+
+div.map {
+    padding: 0;
+}
+
+iframe.map {
+    margin: 80px 0 -10px 0;
+    border: none;
+}
+
+/* End Contact Page Style */
 
 /* End Main Content*/
 
@@ -307,16 +351,26 @@ footer {
     color: var(--texto-oscuro);
 }
 
-
 .footIcons:hover a.socials:not(:hover){
-        opacity: 0.8;
-        filter: blur(2px);
+    opacity: 0.8;
+    filter: blur(2px);
 }
-
 
 /* End Footer */
 
 /* Media Query */
+
+@media only screen and (min-width:1483px) {
+    div.ContSec {
+        margin: 0 0 80px 0;
+        grid-template-columns: 30% 1fr 30%;
+        grid-template-rows: 40% 1fr;
+    }
+    iframe.map {
+        margin: 0 0 -10px 0;
+        border: none;
+    }
+}
 
 @media only screen and (max-width:1483px) {
     h1 {
@@ -337,6 +391,19 @@ footer {
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: repeat(2, 550px);
     }
+
+
+    .portMain{
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 200px);
+    }
+    
+    div.ContSec {
+        margin: 0 0 80px 0;
+        grid-template-columns: 20% 1fr 20%;
+        grid-template-rows: 40% 1fr;
+    }
+
 }
 
 @media only screen and (max-width:1283px) {
@@ -357,6 +424,12 @@ footer {
     h1.txtAbout {
         font-size: 5vw;
     }
+
+    div.ContSec {
+        margin: 0 0 80px 0;
+        grid-template-columns: 20% 1fr 20%;
+        grid-template-rows: 40% 1fr;
+    }
 }
 
 
@@ -374,7 +447,6 @@ footer {
     .BtnMain {
         margin-top: -30px;
     }
-
 
     .item{
         grid-template-columns: 1fr 1fr 1fr;
@@ -420,7 +492,19 @@ footer {
         grid-row: 4/5;
     }
 
+    div.ContSec {
+        margin: 0 0 80px 0;
+        grid-template-columns: 10% 1fr 10%;
+        grid-template-rows: 40% 1fr;
+    }
+
+    iframe.map {
+        margin: 20px 0 -10px 0;
+        border: none;
+    }
 }
+
+
 
 @media only screen and (max-width: 600px) {
     
@@ -471,4 +555,47 @@ footer {
         grid-template-rows: repeat(2, 200px);
     }
     
+    div.ContSec {
+        margin: 0 0 80px 0;
+        grid-template-columns: 10% 1fr 10%;
+        grid-template-rows: 40% 1fr;
+    }
+
+    div.form {
+        display: -ms-inline-grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 10% 10% 10% 10% 1fr 10%;
+        margin-bottom:  80px;
+    }
+    
+    .input1 {
+        grid-column: 1/3;
+        grid-row: 1/2;
+    }
+
+    .input2 {
+        grid-column: 1/3;
+        grid-row: 2/3;
+    }
+    
+    .input3 {
+        grid-column: 1/3;
+        grid-row: 3/4;
+    }
+
+    .input4 {
+        grid-column: 1/3;
+        grid-row: 4/5;
+    }
+
+    textarea {
+        grid-column: 1/3;
+        grid-row: 5/6;
+    }
+    
+    #SubmitContact {
+        grid-column: 1/3;
+        grid-row: 6/7;
+    }
+
 }
