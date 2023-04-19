@@ -209,23 +209,6 @@ p.BtnMain:hover {
 
 /* Start Portfolio Page style */
 
-/* .portmain{
-    width: 100vw;
-    height: auto;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(8, auto);
-    overflow: scroll;
-}
-
-.port{
-    width: 100vw;
-    background-color: black;
-    background-size: cover;
-    background-position: center;
-    display: grid;
-} */
-
 .galeria{
     width: 100%;
     height: auto;
@@ -272,7 +255,6 @@ p.BtnMain:hover {
 .item8{ 
     background-image: url(./IMG/portfolio/holalucs_postmodern_malian_soldier_kids_in_a_futuristic_space_l_ced4b8ea-c152-4d7c-9c79-2452ff1ad6de.png);
 }
-
 
 /* End Portfolio Page style */
 
@@ -330,7 +312,7 @@ footer {
         opacity: 0.8;
         filter: blur(2px);
 }
-    
+
 
 /* End Footer */
 
@@ -490,11 +472,3 @@ footer {
     }
     
 }
-
-/* @media only screen and (min-width:500px) {
-    .galeria{
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: repeat(4, 250px);
-    }
-}
- */
