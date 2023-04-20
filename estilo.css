@@ -100,7 +100,7 @@ a.active {
     bottom: -7px;
 }
 
-ul:hover li a:not(:hover) {
+ul:hover a:not(:hover) {
     opacity: 0.8;
     filter: blur(2px);
 }
@@ -229,16 +229,16 @@ p.BtnMain:hover {
     background-image: url(./img/portfolio/image4.png);
 }
 .item5{ 
-    background-image: url(img/portfolio/image5.png);
+    background-image: url(./img/portfolio/image5.png);
 }
 .item6{ 
-    background-image: url(img/portfolio/image6.png);
+    background-image: url(./img/portfolio/image6.png);
 }
 .item7{ 
-    background-image: url(img/portfolio/image7.png);
+    background-image: url(./img/portfolio/image7.png);
 }
 .item8{ 
-    background-image: url(img/portfolio/image8.png);
+    background-image: url(./img/portfolio/image8.png);
 }
 
 /* End Portfolio Page style */
@@ -444,6 +444,10 @@ footer {
         font-size: 70px;
     }
 
+    .galeria{
+        grid-template-rows: repeat(3, 550px);
+    }
+
     .BtnMain {
         margin-top: -30px;
     }
@@ -517,6 +521,11 @@ footer {
         font-size: 50px;
     }
 
+    div.galeria {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(8, 500px);
+    }
+
     .BtnMain {
         text-align: center;
         margin-top: -30px;
@@ -550,11 +559,6 @@ footer {
         padding-left: 5px;
     }  
 
-    .portMain{
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(2, 200px);
-    }
-    
     div.ContSec {
         margin: 0 0 80px 0;
         grid-template-columns: 10% 1fr 10%;
