@@ -5,6 +5,7 @@
   --color-secundario: #FADB5F;
   --fondo-claro: #ffffff;
   --texto-oscuro: #000000;
+  --textsize-XL: 140px;
 }
 
 * {
@@ -15,7 +16,7 @@
 }
 
 h1 {
-  font-size: 12vh;
+  font-size: var(--textsize-XL);
   font-weight: 700;
   color: var(--texto-oscuro);
 }
@@ -39,8 +40,7 @@ p {
   height: 100px;
   margin: 30px 0 0 38px;
 }
-
-.logo img:hover {
+.logo img :hover {
   scale: 1.02;
 }
 
@@ -62,24 +62,12 @@ span .fa-solid {
   font-size: 20px;
   overflow: hidden;
 }
-
-.barra li {
-  list-style: none;
-  display: inline-block;
-  margin: 10px 20px 0 0;
-}
-
 .barra a {
   position: relative;
   text-decoration: none;
   color: #000000;
 }
-
-a.active {
-  color: var(--color-primario);
-}
-
-.barra a::before {
+.barra a ::before {
   position: absolute;
   content: "";
   height: 4px;
@@ -88,14 +76,22 @@ a.active {
   bottom: -7px;
   transition: ease-out 0.5s;
 }
-
-.barra a:hover::before {
+.barra a :hover::before {
   position: absolute;
   content: "";
   height: 4px;
   width: 100%;
   background-color: var(--color-primario);
   bottom: -7px;
+}
+.barra li {
+  list-style: none;
+  display: inline-block;
+  margin: 10px 20px 0 0;
+}
+
+a.active {
+  color: var(--color-primario);
 }
 
 ul:hover a:not(:hover) {
@@ -105,26 +101,19 @@ ul:hover a:not(:hover) {
 
 /* End Nav */
 /*  Start Main Content  */
-.MainCont {
-  width: 100%;
-  height: auto;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(2, 50vw);
-}
-
 main {
   display: flex;
   justify-content: center;
   width: 100%;
+  overflow: hidden;
 }
-
-section {
+main section {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-evenly;
-  height: calc(100vh - 300px);
+  height: auto;
+  min-height: calc(100vh - 300px);
   align-items: center;
   padding: 0 20px;
 }
@@ -136,10 +125,9 @@ section {
 }
 
 .imgLeft {
-  height: 60vh;
+  height: 800px;
   width: auto;
   flex: 2;
-  display: flex;
   justify-content: center;
 }
 
@@ -150,15 +138,11 @@ section {
 }
 
 .imgRight {
-  height: 60vh;
+  height: 800px;
   width: auto;
   flex: 2;
   display: flex;
   justify-content: center;
-}
-
-.txtAbout {
-  font-size: 6vw;
 }
 
 p.BtnMain {
@@ -242,7 +226,7 @@ p.BtnMain:hover {
 /* Start Contact Page Style */
 div.ContSec {
   width: 100%;
-  margin: 0 0 80px 0;
+  margin: 0 0 130px 0;
   padding: 0;
   display: grid;
   grid-template-columns: 25% 1fr 25%;
@@ -357,15 +341,7 @@ footer {
 }
 @media only screen and (max-width: 1483px) {
   h1 {
-    font-size: 7vw;
-  }
-  h1.txtAbout {
-    font-size: 6vw;
-    margin: 0px;
-    padding: 0px;
-  }
-  .imgRight {
-    height: 75%;
+    font-size: 110px;
   }
   .galeria {
     grid-template-columns: 1fr 1fr 1fr;
@@ -394,7 +370,7 @@ footer {
     margin-right: 40px;
   }
   h1.txtAbout {
-    font-size: 5vw;
+    font-size: 150px;
   }
   div.ContSec {
     margin: 0 0 80px 0;

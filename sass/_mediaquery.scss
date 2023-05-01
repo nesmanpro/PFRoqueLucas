@@ -14,19 +14,9 @@
 
 @media only screen and (max-width:1483px) {
     h1 {
-        font-size: 7vw;
-    }
-
-    h1.txtAbout {
-        font-size: 6vw;
-        margin: 0px;
-        padding: 0px;
+        font-size: 110px;
     }
     
-    .imgRight {
-        height: 75%;
-    }
-
     .galeria{
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: repeat(2, 550px);
@@ -62,7 +52,7 @@
     }
 
     h1.txtAbout {
-        font-size: 5vw;
+        font-size: 150px;
     }
 
     div.ContSec {
