@@ -14,7 +14,7 @@
 
 @media only screen and (max-width:1483px) {
     h1 {
-        font-size: 110px;
+        font-size: var(--H1-L);
     }
     
     .galeria{
@@ -37,9 +37,6 @@
 }
 
 @media only screen and (max-width:1283px) {
-    .imgLeft {
-        height: 65%;
-    }
 
     .txtLeft {
         margin-left: 60px;
@@ -51,8 +48,8 @@
         margin-right: 40px;
     }
 
-    h1.txtAbout {
-        font-size: 150px;
+    h1 {
+        font-size: var(--H1-M);
     }
 
     div.ContSec {
@@ -71,7 +68,7 @@
     }
 
     h1, h1.txtAbout {
-        font-size: 70px;
+        font-size: var(--H1-S);
     }
 
     .galeria{
@@ -147,8 +144,8 @@
         text-align:center;
     }
 
-    h1, h1.txtAbout {
-        font-size: 50px;
+    h1 {
+        font-size: var(--H1-XS);
     }
 
     div.galeria {
@@ -162,7 +159,11 @@
     }
 
     .imgRight, .imgLeft {
-        height: 450px;
+        height: 550px;
+    }
+
+    .txtLeft {
+        margin-left: 20px;
     }
 
     footer {

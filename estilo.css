@@ -5,7 +5,11 @@
   --color-secundario: #FADB5F;
   --fondo-claro: #ffffff;
   --texto-oscuro: #000000;
-  --textsize-XL: 140px;
+  --H1-XL: 140px;
+  --H1-L: 110px;
+  --H1-M: 90px;
+  --H1-S: 70px;
+  --H1-XS: 60px;
 }
 
 * {
@@ -16,7 +20,7 @@
 }
 
 h1 {
-  font-size: var(--textsize-XL);
+  font-size: var(--H1-XL);
   font-weight: 700;
   color: var(--texto-oscuro);
 }
@@ -128,6 +132,7 @@ main section {
   height: 800px;
   width: auto;
   flex: 2;
+  display: flex;
   justify-content: center;
 }
 
@@ -225,6 +230,7 @@ p.BtnMain:hover {
 /* End Portfolio Page style */
 /* Start Contact Page Style */
 div.ContSec {
+  min-height: calc(100vh - 836px);
   width: 100%;
   margin: 0 0 130px 0;
   padding: 0;
@@ -341,7 +347,7 @@ footer {
 }
 @media only screen and (max-width: 1483px) {
   h1 {
-    font-size: 110px;
+    font-size: var(--H1-L);
   }
   .galeria {
     grid-template-columns: 1fr 1fr 1fr;
@@ -358,9 +364,6 @@ footer {
   }
 }
 @media only screen and (max-width: 1283px) {
-  .imgLeft {
-    height: 65%;
-  }
   .txtLeft {
     margin-left: 60px;
     margin-right: 10px;
@@ -369,8 +372,8 @@ footer {
     margin-left: 10px;
     margin-right: 40px;
   }
-  h1.txtAbout {
-    font-size: 150px;
+  h1 {
+    font-size: var(--H1-M);
   }
   div.ContSec {
     margin: 0 0 80px 0;
@@ -384,7 +387,7 @@ footer {
     text-align: left;
   }
   h1, h1.txtAbout {
-    font-size: 70px;
+    font-size: var(--H1-S);
   }
   .galeria {
     grid-template-rows: repeat(3, 550px);
@@ -442,8 +445,8 @@ footer {
     overflow-x: hidden;
     text-align: center;
   }
-  h1, h1.txtAbout {
-    font-size: 50px;
+  h1 {
+    font-size: var(--H1-XS);
   }
   div.galeria {
     grid-template-columns: 1fr;
@@ -454,7 +457,10 @@ footer {
     margin-top: -30px;
   }
   .imgRight, .imgLeft {
-    height: 450px;
+    height: 550px;
+  }
+  .txtLeft {
+    margin-left: 20px;
   }
   footer {
     flex-wrap: wrap;

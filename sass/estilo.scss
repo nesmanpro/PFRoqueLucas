@@ -6,7 +6,11 @@
     --color-secundario: #FADB5F;
     --fondo-claro: #ffffff;
     --texto-oscuro: #000000;
-    --textsize-XL: 140px;
+    --H1-XL: 140px;
+    --H1-L: 110px;
+    --H1-M: 90px;
+    --H1-S: 70px;
+    --H1-XS: 60px;
 }
     
 * {
@@ -17,7 +21,7 @@
 }
 
 h1 {
-    font-size: var(--textsize-XL);
+    font-size: var(--H1-XL);
     font-weight: 700;
     color: var(--texto-oscuro);
 }
@@ -140,7 +144,7 @@ main {
     height: 800px;
     width: auto;
     flex: 2;
-    // display: flex;
+    display: flex;
     justify-content: center;      
 }
 
