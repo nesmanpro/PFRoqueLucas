@@ -1,0 +1,48 @@
+/* Start Portfolio Page style */
+
+.galeria{
+    width: 100%;
+    height: auto;
+    background-color: var(--color-secundario);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4, 500px);
+}
+
+.galeria .item:hover{
+    scale: 1.03;
+} 
+
+.item{
+    width: 100%;
+    background-color: black;
+    background-size: cover;
+    background-position: center;
+    display: grid;
+}
+
+.item1{ 
+    background-image: url(./img/portfolio/image1.png);
+}
+.item2{ 
+    background-image: url(./img/portfolio/image10.png);
+}
+.item3{ 
+    background-image: url(./img/portfolio/image3.png);
+}
+.item4{ 
+    background-image: url(./img/portfolio/image4.png);
+}
+.item5{ 
+    background-image: url(./img/portfolio/image5.png);
+}
+.item6{ 
+    background-image: url(./img/portfolio/image6.png);
+}
+.item7{ 
+    background-image: url(./img/portfolio/image7.png);
+}
+.item8{ 
+    background-image: url(./img/portfolio/image8.png);
+}
+/* End Portfolio Page style */
