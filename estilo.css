@@ -12,6 +12,7 @@
   --H1-XS: 60px;
 }
 
+/* Mixins */
 * {
   margin: 0;
   padding: 0;
@@ -28,7 +29,7 @@ h1 {
 h2 {
   text-align: center;
   background-color: black;
-  color: #ffc34a;
+  color: #FADB5F;
   font-size: 30px;
   padding: 20px;
   text-align: center;
@@ -113,9 +114,9 @@ main {
 }
 main section {
   display: flex;
+  justify-content: space-evenly;
   flex-wrap: wrap;
   flex-direction: row;
-  justify-content: space-evenly;
   height: auto;
   min-height: calc(100vh - 300px);
   align-items: center;
@@ -166,8 +167,8 @@ p.BtnMain:hover {
 
 .portMain {
   display: flex;
-  flex-direction: column;
   justify-content: center;
+  flex-direction: column;
   align-items: center;
   width: 100%;
 }
@@ -229,15 +230,18 @@ p.BtnMain:hover {
 
 /* End Portfolio Page style */
 /* Start Contact Page Style */
+.map, div.ContSec {
+  padding: 0;
+}
+
 div.ContSec {
   min-height: calc(100vh - 836px);
   width: 100%;
   margin: 0 0 130px 0;
-  padding: 0;
   display: grid;
-  grid-template-columns: 25% 1fr 25%;
-  grid-template-rows: 1fr 1fr;
   justify-content: center;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 25% 1fr 25%;
   align-items: center;
 }
 
@@ -250,8 +254,8 @@ div.form {
   grid-column: 2/3;
   grid-row: 2/3;
   display: grid;
-  grid-template-columns: 1fr 1fr;
   grid-template-rows: 15% 15% 1fr 15%;
+  grid-template-columns: 1fr 1fr;
   grid-gap: 15px;
 }
 
@@ -272,10 +276,6 @@ textarea {
   grid-column: 1/3;
   grid-row: 3/4;
   outline: none;
-}
-
-div.map {
-  padding: 0;
 }
 
 iframe.map {

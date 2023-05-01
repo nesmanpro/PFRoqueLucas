@@ -1,14 +1,25 @@
 /* Start Contact Page Style */
+@mixin flexible ( $dis , $just ) {
+    display: $dis;
+    justify-content: $just;
+}
+
+@mixin gridtempls ( $GridTempRow , $GridTempCol ) {
+    grid-template-rows: $GridTempRow;
+    grid-template-columns: $GridTempCol;
+}
+
+.map {
+    padding: 0;
+}
 
 div.ContSec {
     min-height: calc(100vh - 836px);
     width: 100%;
     margin: 0 0 130px 0;
-    padding: 0;
-    display: grid;
-    grid-template-columns: 25% 1fr 25%;
-    grid-template-rows: 1fr 1fr;
-    justify-content:center;
+    @extend .map;
+    @include flexible( grid , center );
+    @include gridtempls( 1fr 1fr , 25% 1fr 25% );
     align-items: center;
 }
 
@@ -21,8 +32,7 @@ div.form {
     grid-column: 2/3;
     grid-row: 2/3;
     display: grid;
-    grid-template-columns:1fr 1fr;
-    grid-template-rows: 15% 15% 1fr 15%;
+    @include gridtempls ( 15% 15% 1fr 15% , 1fr 1fr );
     grid-gap: 15px;
 }
 
@@ -35,7 +45,6 @@ input {
     outline: none;
 }
 
-
 textarea {
     background-color: rgb(237, 237, 237);
     border: none;
@@ -44,11 +53,6 @@ textarea {
     grid-column: 1/3;
     grid-row: 3/4;
     outline: none;
-}
-
-
-div.map {
-    padding: 0;
 }
 
 iframe.map {

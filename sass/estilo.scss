@@ -12,6 +12,13 @@
     --H1-S: 70px;
     --H1-XS: 60px;
 }
+
+/* Mixins */
+
+@mixin flexible ( $dis , $just ) {
+    display: $dis;
+    justify-content: $just;
+}
     
 * {
     margin: 0;
@@ -29,7 +36,7 @@ h1 {
 h2 {
     text-align: center;
     background-color: black;
-    color: #ffc34a; 
+    color: #FADB5F;
     font-size: 30px;
     padding: 20px;
     text-align: center;
@@ -117,16 +124,14 @@ ul:hover a:not(:hover) {
 /*  Start Main Content  */
 
 main {
-    display: flex;
-    justify-content: center;
+    @include flexible( flex , center );
     width: 100%;
     overflow: hidden;
 
     section {
-        display: flex;
+        @include flexible( flex, space-evenly );
         flex-wrap: wrap;
         flex-direction: row;
-        justify-content: space-evenly;
         height: auto;
         min-height: calc(100vh - 300px);
         align-items: center;
@@ -144,8 +149,7 @@ main {
     height: 800px;
     width: auto;
     flex: 2;
-    display: flex;
-    justify-content: center;      
+    @include flexible( flex , center );    
 }
 
 .txtLeft {
@@ -158,8 +162,7 @@ main {
     height: 800px;
     width: auto;
     flex: 2;
-    display: flex;
-    justify-content: center;
+    @include flexible( flex , center );
 }
 
 p.BtnMain {
@@ -177,9 +180,8 @@ p.BtnMain:hover {
 }
 
 .portMain {
-    display: flex;
+    @include flexible( flex , center );
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     width: 100%;
     // position: absolute;
