@@ -1,0 +1,14 @@
+{
+  "name": "pre-entrega3",
+  "version": "1.0.0",
+  "description": "Tercera pre-entrega",
+  "main": "index.js",
+  "scripts": {
+    "node-sass": "sass --watch sass/estilo.scss:../estilo.css"
+  },
+  "author": "Lucas Roque",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^8.0.0"
+  }
+}
