@@ -109,7 +109,10 @@ ul:hover a:not(:hover) {
 main {
   display: flex;
   justify-content: center;
+  flex-direction: column;
   width: 100%;
+  min-height: calc(100vh - 300px);
+  align-items: center;
   overflow: hidden;
 }
 main section {
@@ -118,7 +121,6 @@ main section {
   flex-wrap: wrap;
   flex-direction: row;
   height: auto;
-  min-height: calc(100vh - 300px);
   align-items: center;
   padding: 0 20px;
 }
@@ -285,28 +287,9 @@ iframe.map {
 
 /* End Contact Page */
 /*  Start Footer */
-.foot1 li {
-  list-style: none;
-  display: inline-block;
-  margin: 0 20px 0 0;
-}
-
-.foot2 {
-  font-weight: 600;
-  float: left;
-  margin: 50px 0 0 50px;
-}
-
-.foot2 li {
-  list-style: none;
-  display: inline-block;
-  margin: 0 20px 0 0;
-}
-
 footer {
   display: flex;
   justify-content: space-between;
-  align-items: end;
   background-color: var(--color-secundario);
   height: auto;
   width: 100%;

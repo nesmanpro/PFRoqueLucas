@@ -124,7 +124,10 @@ ul:hover a:not(:hover) {
 
 main {
     @include flexible( flex , center );
+    flex-direction: column;
     width: 100%;
+    min-height: calc(100vh - 300px);
+    align-items: center;
     overflow: hidden;
 
     section {
@@ -132,7 +135,6 @@ main {
         flex-wrap: wrap;
         flex-direction: row;
         height: auto;
-        min-height: calc(100vh - 300px);
         align-items: center;
         padding: 0 20px;
     }
@@ -189,6 +191,7 @@ p.BtnMain:hover {
 /* End Main Content*/
 
 @import "_portfolio";
+@import "_services";
 @import "_contact";
 @import "_footer";
 @import "_mediaquery";

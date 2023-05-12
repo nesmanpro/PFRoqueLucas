@@ -1,35 +1,15 @@
 /*  Start Footer */
 
-.foot1 li {
-    list-style: none;
-    display: inline-block;
-    margin: 0 20px 0 0;
-}
-
-.foot2 {
-    font-weight: 600;
-    float: left;
-    margin: 50px 0 0 50px ;
-}
-
-.foot2 li {
-    list-style: none;
-    display: inline-block;
-    margin: 0 20px 0 0;
-}
 
 footer {
     display: flex;
     justify-content: space-between;
-    align-items: end;
     background-color: var(--color-secundario);
     height: auto;
     width: 100%;
     padding: 60px;
-    // position: relative;
-    // z-index: 10;
-
 }
+
 
 .footLeft {
     font-weight: 500;
@@ -51,3 +31,5 @@ footer {
 }
 
 /*  End Footer */
+
+// footer Service
