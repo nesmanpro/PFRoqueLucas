@@ -33,3 +33,43 @@ footer {
 /*  End Footer */
 
 // footer Service
+
+.foot-service {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-secundario);
+    height: auto;
+    width: 100%;
+    padding: 60px;
+}
+
+.foot-top {
+    display: flex;
+    justify-content: space-between;
+
+    .foot-pages{
+        display: flex;
+        justify-content: space-around;
+    }
+    .foot-icons a {
+        letter-spacing: 15px;
+        font-size: 22px;
+        color: var(--texto-oscuro);
+    }
+
+}
+
+.foot-footer {
+    display: flex;
+    justify-content: space-between;
+    .copyright {
+        font-weight: 500;
+        span {
+            font-weight: 600;
+        }
+    }
+}
+
+
+
+

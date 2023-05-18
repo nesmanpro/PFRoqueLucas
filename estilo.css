@@ -9,7 +9,7 @@
   --H1-L: 110px;
   --H1-M: 90px;
   --H1-S: 70px;
-  --H1-XS: 60px;
+  --H1-XS: 50px;
 }
 
 /* Mixins */
@@ -27,12 +27,15 @@ h1 {
 }
 
 h2 {
-  text-align: center;
-  background-color: black;
-  color: #FADB5F;
-  font-size: 30px;
-  padding: 20px;
-  text-align: center;
+  font-size: var(--H1-XS);
+  font-weight: 700;
+  color: var(--texto-oscuro);
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--texto-oscuro);
 }
 
 p {
@@ -123,6 +126,95 @@ main section {
   height: auto;
   align-items: center;
   padding: 0 20px;
+}
+main .title-skills {
+  display: flex;
+  justify-content: left;
+}
+main .title-skills .skills {
+  margin: 90px 0 30px 0;
+}
+main .cards {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 110px;
+  margin: 10px 8vw;
+  margin-bottom: 80px;
+}
+main .cards .card1 {
+  box-shadow: 10px 10px 15px 1px #eeeeee;
+  max-width: 30rem;
+  min-width: 300px;
+  padding: 30px 40px;
+  border-radius: 30px;
+}
+main .cards .card1 .audience-img {
+  height: 100px;
+  width: auto;
+  margin-bottom: 30px;
+  background-image: url(../img/audience2.svg);
+  background-repeat: no-repeat;
+  background-position: left;
+  transition: ease-in-out;
+  transition-duration: 0.5s;
+}
+main .cards .card1:hover {
+  background-image: linear-gradient(-30deg, var(--color-secundario) 0%, #ffb43a 100%);
+}
+main .cards .card1:hover .audience-img {
+  background-image: url(../img/audience1.svg);
+  background-position: center;
+  scale: 1.1;
+}
+main .cards .card2 {
+  box-shadow: 10px 10px 15px 1px #eeeeee;
+  max-width: 30rem;
+  min-width: 300px;
+  padding: 30px;
+  border-radius: 30px;
+}
+main .cards .card2 .presence-img {
+  height: 100px;
+  width: auto;
+  margin-bottom: 30px;
+  background-image: url(../img/presence2.svg);
+  background-repeat: no-repeat;
+  background-position: left;
+  transition: ease-in-out;
+  transition-duration: 0.5s;
+}
+main .cards .card2:hover {
+  background-image: linear-gradient(-30deg, var(--color-secundario) 0%, #ffb43a 100%);
+}
+main .cards .card2:hover .presence-img {
+  background-image: url(../img/presence1.svg);
+  background-position: center;
+  scale: 1.1;
+}
+main .cards .card3 {
+  box-shadow: 10px 10px 15px 1px #eeeeee;
+  max-width: 30rem;
+  min-width: 300px;
+  padding: 30px;
+  border-radius: 30px;
+}
+main .cards .card3 .ideas-img {
+  height: 100px;
+  width: auto;
+  margin-bottom: 30px;
+  background-image: url(../img/ideas2.svg);
+  background-repeat: no-repeat;
+  background-position: left;
+  transition: ease-in-out;
+  transition-duration: 0.5s;
+}
+main .cards .card3:hover {
+  background-image: linear-gradient(-30deg, var(--color-secundario) 0%, #ffb43a 100%);
+}
+main .cards .card3:hover .ideas-img {
+  background-image: url(../img/ideas1.svg);
+  background-position: center;
+  scale: 1.1;
 }
 
 .txtRight {
@@ -316,6 +408,40 @@ footer {
 }
 
 /*  End Footer */
+.foot-service {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-secundario);
+  height: auto;
+  width: 100%;
+  padding: 60px;
+}
+
+.foot-top {
+  display: flex;
+  justify-content: space-between;
+}
+.foot-top .foot-pages {
+  display: flex;
+  justify-content: space-around;
+}
+.foot-top .foot-icons a {
+  letter-spacing: 15px;
+  font-size: 22px;
+  color: var(--texto-oscuro);
+}
+
+.foot-footer {
+  display: flex;
+  justify-content: space-between;
+}
+.foot-footer .copyright {
+  font-weight: 500;
+}
+.foot-footer .copyright span {
+  font-weight: 600;
+}
+
 /* Media Query */
 @media only screen and (min-width: 1483px) {
   div.ContSec {
