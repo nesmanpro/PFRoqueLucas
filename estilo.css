@@ -588,8 +588,9 @@ footer {
     margin: 0 auto;
     margin-bottom: 80px;
   }
-  section {
-    overflow-x: hidden;
+  .txtRight {
+    margin-left: 20px;
+    margin-right: 50px;
   }
   h1 {
     font-size: var(--H1-XS);
@@ -647,11 +648,11 @@ footer {
   }
 }
 @media only screen and (max-width: 750px) {
-  header {
-    max-width: 100vw;
-  }
-  section {
-    overflow-x: hidden;
+  .cards {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-bottom: 80px;
   }
   h1 {
     font-size: var(--H1-XS);
@@ -665,9 +666,12 @@ footer {
     margin-top: -30px;
   }
   .imgRight, .imgLeft {
-    height: 550px;
+    height: 600px;
   }
   .txtLeft {
+    margin-left: 20px;
+  }
+  .txtRight {
     margin-left: 20px;
   }
   footer {
@@ -724,6 +728,11 @@ footer {
   #SubmitContact {
     grid-column: 1/3;
     grid-row: 6/7;
+  }
+}
+@media only screen and (max-width: 540px) {
+  .txtRight, .txtLeft {
+    padding: 0 25vw;
   }
 }
 /* End Media Query */

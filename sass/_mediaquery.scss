@@ -174,12 +174,11 @@
         flex-direction: column;
         margin: 0 auto;
         margin-bottom: 80px;
-
     }
     
-    section {
-        overflow-x: hidden;
-        // text-align:center;
+    .txtRight {
+        margin-left: 20px;
+        margin-right: 50px;
     }
 
     h1 {
@@ -255,13 +254,16 @@
 
 @media only screen and (max-width: 750px) {
 
-    header {
-        max-width: 100vw;
+    section {
+        // overflow-x: hidden;
+        // text-align:center;
     }
     
-    section {
-        overflow-x: hidden;
-        // text-align:center;
+    .cards {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        margin-bottom: 80px;
     }
 
     h1 {
@@ -279,10 +281,14 @@
     }
 
     .imgRight, .imgLeft {
-        height: 550px;
+        height: 600px;
     }
 
     .txtLeft {
+        margin-left: 20px;
+    }
+
+    .txtRight {
         margin-left: 20px;
     }
 
@@ -355,4 +361,9 @@
 
 }
 
+@media only screen and (max-width: 540px){
+    .txtRight, .txtLeft {
+        padding: 0 25vw;
+    }
+}
 /* End Media Query */
