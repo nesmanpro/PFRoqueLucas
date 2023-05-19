@@ -304,12 +304,8 @@
         height: 600px;
     }
 
-    .txtLeft {
-        margin-left: 20px;
-    }
-
-    .txtRight {
-        margin-left: 20px;
+    .txtRight, .txtLeft {
+        padding: 0 20vw;
     }
 
     footer {
