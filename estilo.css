@@ -456,10 +456,10 @@ footer {
   }
   .mainAbout {
     margin: 0 auto;
-    max-width: 60vw;
+    max-width: 70vw;
   }
-  section {
-    max-width: 40vw;
+  h1 {
+    font-size: var(--H1-L);
   }
   .galeria {
     grid-template-columns: 1fr 1fr 1fr;
@@ -499,8 +499,15 @@ footer {
   }
 }
 @media only screen and (min-width: 1483px) {
-  section {
-    max-width: 95vw;
+  header {
+    max-width: 75vw;
+  }
+  .mainAbout {
+    margin: 0 auto;
+    max-width: 90vw;
+  }
+  h1 {
+    font-size: var(--H1-M);
   }
   div.ContSec {
     margin: 0 0 80px 0;
@@ -513,8 +520,19 @@ footer {
   }
 }
 @media only screen and (max-width: 1483px) {
+  header {
+    max-width: 80vw;
+  }
+  .mainAbout {
+    margin: 0 auto;
+  }
   h1 {
-    font-size: var(--H1-L);
+    font-size: var(--H1-S);
+  }
+  .cards {
+    display: flex;
+    margin: 0 auto;
+    margin-bottom: 80px;
   }
   .galeria {
     grid-template-columns: 1fr 1fr;
@@ -531,6 +549,14 @@ footer {
   }
 }
 @media only screen and (max-width: 1283px) {
+  header {
+    max-width: 95vw;
+  }
+  .cards {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 80px;
+  }
   .txtLeft {
     margin-left: 60px;
     margin-right: 10px;
@@ -540,7 +566,7 @@ footer {
     margin-right: 40px;
   }
   h1 {
-    font-size: var(--H1-M);
+    font-size: var(--H1-S);
   }
   div.ContSec {
     margin: 0 0 80px 0;
@@ -548,13 +574,25 @@ footer {
     grid-template-rows: 40% 1fr;
   }
 }
-@media only screen and (min-width: 600px) and (max-width: 1023px) {
+@media only screen and (min-width: 750px) and (max-width: 1023px) {
+  header {
+    max-width: 95vw;
+  }
+  .mainAbout {
+    margin: 0 auto;
+    max-width: 100vw;
+  }
+  .cards {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-bottom: 80px;
+  }
   section {
     overflow-x: hidden;
-    text-align: left;
   }
-  h1, h1.txtAbout {
-    font-size: var(--H1-S);
+  h1 {
+    font-size: var(--H1-XS);
   }
   .galeria {
     grid-template-columns: 1fr 1fr 1fr;
@@ -608,10 +646,12 @@ footer {
     border: none;
   }
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 750px) {
+  header {
+    max-width: 100vw;
+  }
   section {
     overflow-x: hidden;
-    text-align: center;
   }
   h1 {
     font-size: var(--H1-XS);
