@@ -377,7 +377,6 @@
 }
 
 @media only screen and (max-width: 540px){
-
     main {
         flex-direction: column;
         width: 100vw;
@@ -388,5 +387,38 @@
         margin: 0 auto;
         padding: 60px 126px;
     }
+    
 }
+
+@media only screen 
+    and (device-width: 414px) 
+    and (device-height: 896px) 
+    and (-webkit-device-pixel-ratio: 3) {
+        main {
+        flex-direction: column;
+        width: 100vw;
+        overflow: hidden;
+    }
+
+    .txtRight, .txtLeft {
+        margin: 0 auto;
+        padding: 60px 126px;
+    }
+}
+@media only screen 
+    and (device-width: 375px) 
+    and (device-height: 812px) 
+    and (-webkit-device-pixel-ratio: 3) {
+        main {
+            flex-direction: column;
+            width: 100vw;
+            overflow: hidden;
+        }
+    
+        .txtRight, .txtLeft {
+            margin: 0 auto;
+            padding: 60px 126px;
+        }
+    }
+
 /* End Media Query */
