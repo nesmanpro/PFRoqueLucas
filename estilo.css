@@ -676,8 +676,8 @@ footer {
     width: 100vw;
   }
   .txtRight, .txtLeft {
-    margin: 0 auto;
-    padding: 60px 126px;
+    margin: 0 20px;
+    padding: 60px 106px;
   }
   h1 {
     font-size: var(--H1-XS);
