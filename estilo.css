@@ -663,7 +663,6 @@ footer {
 }
 @media only screen and (max-width: 750px) {
   .sec {
-    overflow-x: hidden;
     text-align: center;
   }
   .cards {
@@ -749,7 +748,6 @@ footer {
   main {
     flex-direction: column;
     width: 100vw;
-    overflow: hidden;
   }
   .txtRight, .txtLeft {
     margin: 0 auto;
@@ -760,7 +758,6 @@ footer {
   main {
     flex-direction: column;
     width: 100vw;
-    overflow: hidden;
   }
   .txtRight, .txtLeft {
     margin: 0 auto;
@@ -771,7 +768,6 @@ footer {
   main {
     flex-direction: column;
     width: 100vw;
-    overflow: hidden;
   }
   .txtRight, .txtLeft {
     margin: 0 auto;

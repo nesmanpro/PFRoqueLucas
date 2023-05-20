@@ -274,7 +274,7 @@
 @media only screen and (max-width: 750px) {
 
     .sec {
-        overflow-x: hidden;
+        // overflow-x: hidden;
         text-align:center;
     }
     
@@ -380,7 +380,7 @@
     main {
         flex-direction: column;
         width: 100vw;
-        overflow: hidden;
+        // overflow: hidden;
     }
 
     .txtRight, .txtLeft {
@@ -397,7 +397,7 @@
         main {
         flex-direction: column;
         width: 100vw;
-        overflow: hidden;
+        // overflow: hidden;
     }
 
     .txtRight, .txtLeft {
@@ -412,7 +412,7 @@
         main {
             flex-direction: column;
             width: 100vw;
-            overflow: hidden;
+            // overflow: hidden;
         }
     
         .txtRight, .txtLeft {
