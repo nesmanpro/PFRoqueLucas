@@ -192,9 +192,8 @@
         margin-bottom: 80px;
     }
     
-    .txtRight {
-        margin-left: 20px;
-        margin-right: 50px;
+    .txtRight, .txtLeft {
+        padding: 0 20vw;
     }
 
     h1 {
@@ -379,7 +378,8 @@
 
 @media only screen and (max-width: 540px){
     .txtRight, .txtLeft {
-        padding: 0 25vw;
+        margin: 0 auto;
+        padding: 30vw;
     }
 }
 /* End Media Query */
