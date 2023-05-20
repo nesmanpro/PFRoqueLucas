@@ -173,7 +173,7 @@
 }
 
 
-@media only screen and (min-width:750px) and (max-width:1023px) {
+@media only screen and (min-width:600px) and (max-width:1023px) {
 
     header {
         max-width: 95vw;
@@ -193,7 +193,7 @@
     }
     
     .txtRight, .txtLeft {
-        padding: 0 20px;
+        padding: 0 10vw;
     }
 
     h1 {
@@ -271,7 +271,7 @@
 
 
 
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 600px) and (min-width: 200px) {
 
     .sec {
         // overflow-x: hidden;
@@ -285,19 +285,10 @@
         margin-bottom: 80px;
     }
 
-    main {
-        flex-direction: column;
-    }
-
-    .txtRight, .txtLeft {
-        margin: 0 20px;
-        padding: 60px 106px;
-    }
-    
-
     h1 {
         font-size: var(--H1-XS);
     }
+    
 
     div.galeria {
         grid-template-columns: 1fr;
@@ -312,10 +303,6 @@
     .imgRight, .imgLeft {
         height: 600px;
     }
-
-    // .txtRight, .txtLeft {
-    //     padding: 0 20px;
-    // }
 
     footer {
         flex-wrap: wrap;
@@ -383,6 +370,17 @@
         grid-column: 1/3;
         grid-row: 6/7;
     }
+
+    main {
+        flex-direction: column;
+    }
+
+    .txtRight, .txtLeft {
+        max-width: 70vw;
+        margin: 0 auto;
+        padding: 60px 0;
+    }
+    
 
 }
 
