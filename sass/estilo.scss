@@ -132,7 +132,7 @@ ul:hover a:not(:hover) {
 main {
     @include flexible( flex , center );
     flex-direction: column;
-    width: 100%;
+    width: 100vw;
     min-height: calc(100vh - 300px);
     align-items: center;
     overflow: hidden;

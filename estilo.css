@@ -117,7 +117,7 @@ main {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  width: 100%;
+  width: 100vw;
   min-height: calc(100vh - 300px);
   align-items: center;
   overflow: hidden;
@@ -601,7 +601,7 @@ footer {
     margin-bottom: 80px;
   }
   .txtRight, .txtLeft {
-    padding: 0 20vw;
+    padding: 0 20px;
   }
   h1 {
     font-size: var(--H1-XS);
@@ -662,6 +662,10 @@ footer {
   }
 }
 @media only screen and (max-width: 750px) {
+  .sec {
+    overflow-x: hidden;
+    text-align: center;
+  }
   .cards {
     display: flex;
     flex-direction: column;
@@ -683,7 +687,7 @@ footer {
     height: 600px;
   }
   .txtRight, .txtLeft {
-    padding: 0 20vw;
+    padding: 0 20px;
   }
   footer {
     flex-wrap: wrap;
@@ -742,9 +746,14 @@ footer {
   }
 }
 @media only screen and (max-width: 540px) {
+  main {
+    flex-direction: column;
+    width: 100vw;
+    overflow: hidden;
+  }
   .txtRight, .txtLeft {
     margin: 0 auto;
-    padding: 30vw;
+    padding: 60px 106px;
   }
 }
 /* End Media Query */
