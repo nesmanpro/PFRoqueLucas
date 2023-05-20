@@ -274,8 +274,18 @@
 @media only screen and (max-width: 750px) {
 
     .sec {
-        // overflow-x: hidden;
-        text-align:center;
+        text-align: center;
+        max-width: 90vw;
+    }
+
+    main {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .txtRight, .txtLeft {
+        margin: 20px;
+        padding: 60px 0px;
     }
     
     .cards {
@@ -284,18 +294,6 @@
         margin: 0 auto;
         margin-bottom: 80px;
     }
-
-    main {
-        flex-direction: column;
-        width: 100vw;
-        // overflow: hidden;
-    }
-
-    .txtRight, .txtLeft {
-        margin: 0 20px;
-        padding: 60px 106px;
-    }
-    
 
     h1 {
         font-size: var(--H1-XS);
