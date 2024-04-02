@@ -1,4 +1,4 @@
-# NESMANPRO Communication Agency Project
+# Communication Agency Project (HTML & SASS)
 
 This project involves the development of a website, a communication agency specializing in design, photography, web development, and branding. The main objective of the website is to promote the services offered by the agency and allow users to get in touch with the team.
 
